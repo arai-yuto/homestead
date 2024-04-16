@@ -20,13 +20,23 @@ li{
     font-size: 14px;
 }
 
-h1 > a{
+.new{
     font-size: 12px;
     background-color: aqua;
     border: 1px solid;
     border-radius: 3px;
     padding: 3px 10px;
     margin-left: auto;
+    text-decoration: none;
+}
+
+.search{
+    font-size: 12px;
+    background-color: orange;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;
+    margin-left: 10px;
     text-decoration: none;
 }
 

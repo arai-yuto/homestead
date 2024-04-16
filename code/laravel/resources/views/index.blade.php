@@ -2,7 +2,7 @@
     <h1>
         <span>Hello Laravel!</span>
         <div class="new"><a href="{{ route('create.posts') }}">新規追加</a></div>
-        <div class="search"><a href="">検索</a></div>
+        <div class="search"><a href="{{ route('search.posts') }}">検索</a></div>
     </h1>
     <ul>
         @foreach ($posts as $post)
