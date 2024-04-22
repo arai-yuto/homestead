@@ -6,15 +6,21 @@
 
         <label >
             Title検索
-            <input type="text" name="title" value="{{ old('title') }}">
+            <input type="text" name="keyword" value="{{ old('keyword') }}">
         </label>
-        @error('title')
+        {{-- @error('title')
         <div class="error">{{ $message }}</div>
-            @enderror
+            @enderror --}}
         <div class="btn"><button>検索</button></div>
         <label>
             検索結果
-            <li><a href=""></a></li>
+            <ul>
+                @foreach ($posts as $post)
+                    <li>
+                        <a href="{{ route('text.posts',$post->id)}}">{{ $post->title }}</a>
+                    </li>
+                @endforeach
+            </ul>
         </label>
     </form>
 
